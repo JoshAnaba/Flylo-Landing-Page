@@ -7,7 +7,7 @@
 
 **To do this challenge you need a basic understanding of HTML and CSS.**
 
-here's a link to the completed [challenge](flylo-darktheme-netlify.app)
+here's a link to my completed [challenge](flylo-darktheme-netlify.app)
 
 
 **Have fun building!** 🚀

@@ -1,0 +1,612 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #181f2a;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  word-spacing: 1px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
+  height: 100px;
+  background-color: #1c2431;
+}
+
+header .logo {
+  padding: 20px;
+}
+
+header .logo svg {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+header #navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 27%;
+  padding: 30px 30px 50px 30px;
+}
+
+header #navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+#section-1 {
+  background-color: #1c2431;
+  height: 90vh;
+}
+
+#section-1 > div {
+  margin: auto;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-1 > div img {
+  width: 420px;
+  height: 300px;
+}
+
+#section-1 > div > div {
+  width: 500px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-1 > div > div h1 {
+  margin-bottom: 30px;
+}
+
+#section-1 > div > div p {
+  width: 460px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+#section-1 > div button {
+  background-color: #65e2d9;
+  width: 170px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#section-1 > div button:hover {
+  background-color: #8cf2eb;
+}
+
+#section-2 {
+  padding: 20px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #181f2a;
+}
+
+#section-2 > div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+#section-2 > div svg {
+  color: #65e2d9;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+#section-2 > div .rel {
+  width: 30px;
+  height: 30px;
+}
+
+#section-2 > div .rel-1 {
+  position: relative;
+  right: 12px;
+}
+
+#section-2 > div .rel-2 {
+  position: relative;
+  right: 45px;
+  bottom: 10px;
+}
+
+#section-2 > div .rel-3 {
+  position: relative;
+  right: 16px;
+}
+
+#section-2 > div .rel-4 {
+  position: relative;
+  right: 13px;
+}
+
+#section-2 > div > div {
+  text-align: center;
+  width: 300px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+#section-3 {
+  padding: 20px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 60px;
+  font-size: 15px;
+}
+
+#section-3 img {
+  height: 300px;
+  width: 45%;
+  margin-right: 70px;
+}
+
+#section-3 > div {
+  width: 50%;
+}
+
+#section-3 > div h1 {
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+#section-3 > div p {
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+#section-3 > div a {
+  color: #65e2d9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-4 #quote {
+  position: relative;
+  z-index: 1;
+  left: 150px;
+  top: 45px;
+}
+
+#section-4 > div {
+  padding: 20px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  background-color: #181f2a;
+}
+
+#section-4 > div #quote-res {
+  display: none;
+}
+
+#section-4 > div .testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25px 15px 20px 15px;
+  background-color: #1c2431;
+  margin: 10px;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+#section-4 > div .testimonials .test-text {
+  margin-bottom: 15px;
+}
+
+#section-4 > div .testimonials .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-4 > div .testimonials .profile img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#section-4 > div .testimonials .profile .name {
+  font-size: 10px;
+}
+
+#section-4 > div .testimonials .profile .title {
+  font-size: 8px;
+}
+
+#section-5 > div {
+  position: relative;
+  top: 120px;
+  padding: 40px 70px;
+  width: 750px;
+  margin: auto;
+  border-radius: 8px;
+  background-color: #1c2431;
+  text-align: center;
+  font-size: 13px;
+}
+
+#section-5 > div h1 {
+  margin-bottom: 30px;
+}
+
+#section-5 > div p {
+  margin-bottom: 50px;
+}
+
+#section-5 > div > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#section-5 > div > form > div > input, #section-5 > div > form input {
+  height: 42px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+
+#section-5 > div > form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+}
+
+#section-5 > div > form > div input[type='email'] {
+  margin: 0 10px;
+  padding-left: 40px;
+}
+
+#section-5 > div > form input[type='submit'] {
+  width: 30%;
+  margin: 0 10px;
+  background-color: #65e2d9;
+  color: #fff;
+  cursor: pointer;
+}
+
+#section-5 > div > form input[type='submit'] {
+  background-color: #8cf2eb;
+}
+
+#footer {
+  padding: 200px 70px;
+  background-color: #08101c;
+  font-size: 14px;
+}
+
+#footer .logo {
+  padding: 20px;
+}
+
+#footer .logo svg {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#footer .footer-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer .footer-div #location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+}
+
+#footer .footer-div #location #location-svg {
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+#footer .footer-div #contact p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+#footer .footer-div #contact p svg {
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+#footer .footer-div .ft-list p {
+  margin-bottom: 20px;
+}
+
+#footer .footer-div #social svg {
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: .5px solid #fff;
+  margin: 10px;
+}
+
+@media (max-width: 700px) {
+  header .logo {
+    width: 35%;
+    height: 50px;
+    padding: 10px;
+  }
+  header #navbar {
+    width: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px;
+  }
+  #section-1 {
+    width: 100%;
+    height: 100vh;
+  }
+  #section-1 > div {
+    width: 100%;
+  }
+  #section-1 > div img {
+    width: 80%;
+  }
+  #section-1 > div > div {
+    width: 80%;
+  }
+  #section-1 > div > div h1 {
+    font-size: 25px;
+  }
+  #section-1 > div > div P {
+    width: 100%;
+    font-size: 18px;
+  }
+  #section-1 > div button {
+    background-color: #65e2d9;
+    width: 65%;
+    height: 50px;
+    border-radius: 30px;
+  }
+  #section-2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+  }
+  #section-2 > div {
+    width: 80%;
+  }
+  #section-2 > div > div {
+    font-size: 16px;
+    width: 90%;
+  }
+  #section-2 > div .svg-div {
+    margin-top: 70px;
+  }
+  #section-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    font-size: 18px;
+  }
+  #section-3 img {
+    width: 90%;
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
+  #section-3 > div {
+    width: 90%;
+  }
+  #section-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
+  #section-4 > img {
+    display: none;
+    width: 70px;
+  }
+  #section-4 > div {
+    padding: 20px;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #section-4 > div #quote-res {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    display: block;
+    position: relative;
+    top: 25px;
+    right: 150px;
+  }
+  #section-5 > div {
+    width: 90%;
+    padding: 20px;
+  }
+  #section-5 > div > form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #section-5 > div > form > div > input, #section-5 > div > form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #section-5 > div > form > div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #section-5 > div > form > div input[type='email'] {
+    width: 80%;
+    padding-left: 40px;
+    margin-bottom: 10px;
+  }
+  #section-5 > div > form input[type='submit'] {
+    width: 80%;
+    background-color: #65e2d9;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  #footer {
+    padding: 120px 50px;
+  }
+  #footer .footer-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #footer .footer-div > div {
+    margin-bottom: 30px;
+  }
+  #footer .footer-div #location {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

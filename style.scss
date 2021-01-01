@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(218, 28%, 13%);
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    word-spacing: 1px;
+}
+
+@mixin bg($bg){
+    @if $bg == main{
+        background-color:hsl(218, 28%, 13%);
+    }
+
+    @else if $bg == intro&em{
+        background-color:hsl(217, 28%, 15%);
+    }
+
+    @else if $bg == testimonials{
+        background-color: hsl(219, 30%, 18%);
+    }
+
+    @else if $bg == footer{
+        background-color: hsl(216, 53%, 9%);
+    }
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    height: 100px;
+    @include bg(intro&em);
+    .logo{
+        padding: 20px;
+        svg{
+            transform: scale(0.8);
+        }
+    }
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 27%;
+        padding: 30px 30px 50px 30px;
+        a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 12px;
+            
+        }
+    }
+}
+#section-1{
+        @include bg(intro&em);
+        height: 90vh;
+
+    >div{
+        margin: auto;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 420px;
+            height: 300px;
+        }
+        >div{
+            width: 500px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                margin-bottom: 30px;
+            }
+            p{
+                width: 460px;
+                line-height: 25px;
+                margin-bottom: 20px;
+            }
+        }
+
+        button{
+            background-color: hsl(176, 68%, 64%);
+            width: 170px;
+            height: 35px;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color:hsl(176, 80%, 75%);
+        }
+    }
+
+}
+#section-2{
+    padding: 20px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include bg(main);
+    >div{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+        svg{
+            color: hsl(176, 68%, 64%);
+             width: 50px;
+             height: 50px;
+             margin-bottom: 20px;
+        }
+
+        .rel{
+            width: 30px;
+            height: 30px;
+        }
+        .rel-1{
+       
+            position: relative;
+            right: 12px;
+        }
+
+        .rel-2{
+            position: relative;
+            right: 45px;
+            bottom: 10px;
+        }
+
+        .rel-3{
+            position: relative;
+            right:16px;
+        }
+
+        .rel-4{
+            position: relative;
+            right: 13px;
+        }
+        >div{
+            text-align: center;
+            width: 300px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+}
+
+#section-3{
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+    font-size: 15px;
+
+    img{
+        height: 300px;
+        width:45%;
+        margin-right: 70px;
+    }
+
+    >div{
+        width: 50%;
+ 
+        h1{
+            margin-bottom: 25px;
+            font-size: 25px;
+        }
+       p{
+        line-height: 25px;
+        margin-bottom: 10px;
+       }
+       a{
+           color:  hsl(176, 68%, 64%);
+           display: flex;
+           align-items: center;
+       }
+    }
+}
+
+#section-4{
+    
+    #quote{
+        position: relative;
+        z-index: 1;
+        left: 150px;
+        top: 45px;
+    }
+
+    >div{
+        padding: 20px 150px;
+        display: flex;
+        font-size: 13px;
+        @include bg(main);
+        // margin-bottom: 150px;
+
+        #quote-res{
+            display: none;
+        }
+        .testimonials{
+            display: flex;
+            flex-direction: column;
+            padding: 25px 15px 20px 15px;
+            @include bg(testimonials);
+            margin: 10px;
+            border-radius: 5px;
+            z-index: 2;
+            .test-text{
+                margin-bottom: 15px;
+            }
+            .profile{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+                .name{
+                    font-size: 10px;
+                }
+
+                .title{
+                    font-size: 8px;
+                }
+            }
+        }
+
+
+    }
+}
+
+
+#section-5{
+    >div{
+        position: relative;
+        top: 120px;
+        padding: 40px 70px;
+        width: 750px;
+        margin: auto;
+        border-radius: 8px;
+        @include bg(intro&em);
+        text-align: center;
+        font-size: 13px;
+        h1{
+            margin-bottom: 30px;
+        }
+        p{
+            margin-bottom: 50px;
+        }
+        >form{
+            display: flex;
+            justify-content: center;
+            >div>input, input{
+                height: 42px;
+                border-radius: 25px;
+                border: none;
+                outline: none;
+            }
+
+            >div{
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                input[type='email']{
+                    margin: 0 10px;
+                    padding-left: 40px;
+                }
+            }
+           
+            input[type='submit']{
+                width: 30%;
+                margin: 0 10px;
+                background-color: hsl(176, 68%, 64%);
+                color: #fff;
+                cursor: pointer;
+            }
+
+            input[type='submit']{
+                background-color:hsl(176, 80%, 75%);
+            }
+
+           
+        }
+    }
+}
+
+#footer{
+    padding: 200px 70px;
+    background-color: hsl(216, 56%, 7%);
+    font-size: 14px;
+    .logo{
+        padding: 20px;
+        svg{
+            transform: scale(0.8);
+        }
+    }
+
+    .footer-div{
+        display: flex;
+        justify-content: space-between;
+
+        #location{
+            display: flex;
+            width: 350px;
+            #location-svg{
+                margin-right: 20px;
+                margin-top: 10px;
+            }
+
+        }
+
+        #contact{
+            p{
+                display: flex;
+                align-items: center;
+                width: 200px;
+                margin-bottom: 20px;
+                svg{
+                    margin-right: 20px;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .ft-list{
+           p{
+            margin-bottom: 20px;
+           }
+        }
+
+        #social{
+           svg{
+            background-color: #fff;
+            width: 45px;
+            height: 45px;
+            border-radius : 50%;
+            border: .5px solid #fff;
+            margin: 10px;
+           }
+        }
+    }
+}
+
+@media(max-width: 700px){
+
+    header{
+        .logo{
+            width: 35%;
+            height: 50px;
+            padding: 10px;
+        }
+        #navbar{
+            width: 50%;
+            align-items: center;
+            padding: 15px;
+        }
+    }
+    #section-1{
+        width: 100%;
+        height: 100vh;
+            >div{
+                width: 100%;
+                img{
+                    width: 80%;
+                }
+                >div{
+                    width: 80%;
+                    h1{
+                        font-size: 25px;
+                    }
+                    P{
+                        width: 100%;
+                        font-size: 18px;
+                    }
+                }
+
+                button{
+                    background-color: hsl(176, 68%, 64%);
+                    width: 65%;
+                    height: 50px;
+                    border-radius: 30px;
+                }
+
+            }
+        
+       
+    }
+
+    #section-2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+        >div{
+            width: 80%;
+            >div{
+                font-size: 16px;
+                width: 90%;
+            }
+            .svg-div{
+                margin-top: 70px;
+            }
+        }
+    }
+
+    #section-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        font-size: 18px;
+
+        img{
+            width:90%;
+            margin-bottom: 50px;
+            margin-right: 0;
+        }
+
+        >div{
+            width: 90%;
+        }
+    }
+
+    #section-4{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    margin: auto;
+       >img{
+           display: none;
+           width: 70px
+       }
+        >div{
+            padding: 20px;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            #quote-res{
+                transform: scale(0.7);
+                display: block;
+                position: relative;
+                top: 25px;
+                right: 150px;
+            }
+        }
+    }
+
+    #section-5{
+        >div{
+            width: 90%;
+            padding: 20px;
+            >form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                >div>input,input{
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                >div{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    input[type='email']{
+                        width: 80%;
+                        padding-left: 40px;
+                        margin-bottom: 10px;
+    
+                    }
+                }
+               
+                input[type='submit']{
+                    width: 80%;
+                    background-color: hsl(176, 68%, 64%);
+                    color: #fff;
+                    cursor: pointer;
+                    margin-bottom: 10px;
+
+                }
+            }
+        }
+    }
+
+    #footer{
+        padding: 120px 50px;
+        .footer-div{
+            display: flex;
+                flex-direction: column;
+            >div{
+                margin-bottom: 30px;
+            }
+
+            #location{
+                width: 100%;
+            }
+        }
+    }
+}
